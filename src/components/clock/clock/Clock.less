@@ -1,0 +1,13 @@
+@repeat5fr : repeat(5, 1fr);
+
+.clock {
+    display: grid;
+    grid-template-columns: @repeat5fr;
+    grid-template-rows: @repeat5fr;
+    box-sizing: border-box;
+    height: 250px;
+    width: 250px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    background: #265cace7;
+}
