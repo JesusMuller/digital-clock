@@ -1,13 +1,17 @@
 @repeat5fr : repeat(5, 1fr);
+@viewportWidth40: 40vw;
 
 .clock {
     display: grid;
     grid-template-columns: @repeat5fr;
     grid-template-rows: @repeat5fr;
-    box-sizing: border-box;
-    height: 250px;
-    width: 250px;
-    border: 1px solid #000;
+    height: @viewportWidth40;
+    width: @viewportWidth40;
+    font-size: 3vw;
     border-radius: 50%;
-    background: #265cace7;
+    background-image: radial-gradient(circle, #3341c2, #2261b3, #8565c0);
+
+    >span {
+        color: #FFF;
+    }
 }

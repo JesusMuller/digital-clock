@@ -1,7 +1,13 @@
 import React from 'react';
+import './ClockItem.less';
+import { string } from 'prop-types';
 
 const ClockItem = ({ content }) => (
-    <div>{content}</div>
+    <span className={`hour${content}`}>{content}</span>
 );
+
+ClockItem.propTypes = {
+    content: string.isRequired
+};
 
 export default ClockItem;

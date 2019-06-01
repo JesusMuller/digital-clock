@@ -1,0 +1,98 @@
+@Colum1to2 : 1 e("/") 2;
+@Colum2to3 : 2 e("/") 3;
+@Colum3to4 : 3 e("/") 4;
+@Colum4to5 : 4 e("/") 5;
+@Colum5to6 : 5 e("/") 6;
+
+@Row1to2 : 1 e("/") 2;
+@Row2to3 : 2 e("/") 3;
+@Row3to4 : 3 e("/") 4;
+@Row4to5 : 4 e("/") 5;
+@Row5to6 : 5 e("/") 6;
+
+//TODO
+//webpack configuration is not handling class selector
+span[class="hour1"] {
+    grid-column: @Colum4to5;
+    margin: 10px 0 0 10px;
+}
+
+span[class="hour2"] {
+    grid-column: @Colum5to6;
+    grid-row: @Row2to3;
+}
+
+span[class="hour3"] {
+    grid-column: @Colum5to6;
+    grid-row: @Row3to4;
+    justify-self: flex-end;
+    align-self: center;
+    margin-right: 5px;
+}
+
+span[class="hour4"] {
+    grid-column: @Colum5to6;
+    grid-row: @Row4to5;
+}
+
+span[class="hour5"] {
+    grid-column: @Colum4to5;
+    grid-row: @Row5to6;
+    margin: 0 0 10px 10px;
+}
+
+span[class="hour6"] {
+    grid-column: @Colum3to4;
+    grid-row: @Row5to6;
+    justify-self: center;
+    align-self: flex-end;
+    margin-bottom: 5px;
+}
+
+span[class="hour7"] {
+    grid-column: @Colum2to3;
+    grid-row: @Row5to6;
+    margin: 0 10px 10px 0;
+}
+
+span[class="hour8"] {
+    grid-column: @Colum1to2;
+    grid-row: @Row4to5;
+}
+
+span[class="hour9"] {
+    grid-column: @Colum1to2;
+    grid-row: @Row3to4;
+    align-self: center;
+    margin-left: 5px;
+}
+
+span[class="hour10"] {
+    grid-column: @Colum1to2;
+    grid-row: @Row2to3;
+}
+
+span[class="hour11"] {
+    grid-column: @Colum2to3;
+    grid-row: @Row1to2;
+    margin: 10px 10px 0 0;
+}
+
+span[class="hour12"] {
+    grid-column: @Colum3to4;
+    grid-row: @Row1to2;
+    justify-self: center;
+    margin-top: 5px;
+}
+
+span[class="hour1"],
+span[class="hour2"],
+span[class="hour4"],
+span[class="hour5"],
+span[class="hour7"],
+span[class="hour8"],
+span[class="hour10"],
+span[class="hour11"] {
+    justify-self: center;
+    align-self: center;
+}
