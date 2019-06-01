@@ -1,17 +1,18 @@
 import React from 'react';
-import { clock } from './clock.less';
+import { clock, middlePoint } from './clock.less';
 import ClockItem from '../clock-item';
-import { numbers } from '../../constants';
+import { CLOCK_NUMBERS } from '../../../constants';
 
 const Clock = () => (
     <div className={clock}>
-        {numbers ?
-            numbers.map(number =>
+        {CLOCK_NUMBERS ?
+            CLOCK_NUMBERS.map(number =>
                 <ClockItem key={`item${number}`}
                     content={number}
                 />) :
             null
         }
+        <span className={middlePoint}>.</span>
     </div>
 );
 
