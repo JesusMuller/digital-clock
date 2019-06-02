@@ -1,6 +1,6 @@
 import React from 'react';
 import { clock, middlePoint } from './clock.less';
-import ClockItem from '../clock-item';
+import ClockItem from '../../clock-item';
 import { CLOCK_NUMBERS } from '../../../constants';
 
 const Clock = () => (
