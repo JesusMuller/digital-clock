@@ -1,1 +1,1 @@
-export { default } from './ClockContainer.jsx';
+export { default } from './Clock.jsx';

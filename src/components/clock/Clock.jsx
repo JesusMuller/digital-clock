@@ -1,13 +1,13 @@
 import React from 'react';
+import { CLOCK_NUMBERS } from '../../constants';
 import { clock, middlePoint } from './clock.less';
-import ClockItem from '../../clock-item';
-import { CLOCK_NUMBERS } from '../../../constants';
+import ClockHour from '../clock-hour';
 
 const Clock = () => (
     <div className={clock}>
         {CLOCK_NUMBERS ?
             CLOCK_NUMBERS.map(number =>
-                <ClockItem key={`item${number}`}
+                <ClockHour key={`item${number}`}
                     content={number}
                 />) :
             null
