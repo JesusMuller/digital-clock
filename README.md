@@ -1,7 +1,8 @@
 This project was bootstrapped with webpack
 ## Demo
 
-In stackblitz: https://react-mpacbi.stackblitz.io/
+In stackblitz: Open stackblitz editor first : https://stackblitz.com/edit/react-mpacbi?file=null
+then click on Open in New Window(LIVE) or click here: https://react-mpacbi.stackblitz.io/
 
 ## Available Scripts
 
