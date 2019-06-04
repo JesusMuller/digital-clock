@@ -2,6 +2,7 @@ import React from 'react';
 import { CLOCK_NUMBERS } from '../../constants';
 import { clock, middlePoint } from './clock.less';
 import ClockHour from '../clock-hour';
+import ClockHandleContainer from '../clock-handle-container';
 
 const Clock = () => (
     <div className={clock}>
@@ -13,6 +14,7 @@ const Clock = () => (
             null
         }
         <span className={middlePoint}>.</span>
+        <ClockHandleContainer />
     </div>
 );
 
